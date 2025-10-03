@@ -6,9 +6,10 @@ def safe_divide(self,numerator, denominator):
     
     try:
        value = float(numerator) / float(denominator)
+       return value
     except ZeroDivisionError:
         print("Denominator can not be zero")
     except ValueError:
-        print("Value can not be non numeric character")    
+        print("Input must be numeric values")    
     
         
